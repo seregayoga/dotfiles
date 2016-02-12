@@ -3,6 +3,7 @@ colorscheme hybrid
 
 set nocompatible
 filetype off
+filetype plugin indent off
 
 set tabstop=4
 set shiftwidth=4
@@ -23,5 +24,6 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'bling/vim-airline'
 
 call vundle#end()
+
 filetype plugin indent on
 
