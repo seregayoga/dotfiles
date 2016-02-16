@@ -27,3 +27,6 @@ call vundle#end()
 
 filetype plugin indent on
 
+au Filetype html,javascript,raml setlocal ts=2 sts=2 sw=2
+au BufRead,BufNewFile *.raml set filetype=raml
+
