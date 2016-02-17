@@ -22,11 +22,11 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'w0ng/vim-hybrid'
 Plugin 'scrooloose/nerdtree'
 Plugin 'bling/vim-airline'
+Plugin 'IN3D/vim-raml'
 
 call vundle#end()
 
 filetype plugin indent on
 
-au Filetype html,javascript,raml setlocal ts=2 sts=2 sw=2
-au BufRead,BufNewFile *.raml set filetype=raml
+au Filetype html,javascript setlocal ts=2 sts=2 sw=2
 
