@@ -1,3 +1,7 @@
+# common
+alias ls='ls -G'
+
+# git
 alias grelease='cur_branch="$(git rev-parse --abbrev-ref HEAD)" && git checkout master && git pull && git checkout release && git pull && git merge -m "Merge master into release" master && git push && git checkout "$cur_branch" && cur_branch=""'
 alias gst='git status'
 alias gch='git checkout'
