@@ -1,4 +1,5 @@
 *
 !.gitignore
+!.bash_profile
 !.bash_aliases
 
