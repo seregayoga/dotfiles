@@ -21,4 +21,8 @@ alias gra='g rebase --abort'
 alias gl='g log'
 alias gd='g diff'
 alias gaa='g add -A'
+alias gst='g stash'
+alias gstl='g stash list'
+alias gstp='g stash pop'
+alias gcls="gc $(gstl | head -1 | awk -F'[ :]' '{print $5}')"
 
