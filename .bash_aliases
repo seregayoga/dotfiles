@@ -3,7 +3,6 @@ alias ls='ls -G'
 alias grep='grep --color'
 
 # git
-alias grelease='cur_branch="$(git rev-parse --abbrev-ref HEAD)" && git checkout master && git pull && git checkout release && git pull && git merge -m "Merge master into release" master && git push && git checkout "$cur_branch" && cur_branch=""'
 alias g='git'
 alias gs='g status'
 alias gc='g checkout'
@@ -24,5 +23,7 @@ alias gaa='g add -A'
 alias gst='g stash'
 alias gstl='g stash list'
 alias gstp='g stash pop'
-alias gcls="gc $(gstl | head -1 | awk -F'[ :]' '{print $5}')"
+
+# docker
+alias mysql='docker run --rm -it arey/mysql-client'
 
