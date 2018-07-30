@@ -20,6 +20,7 @@ fi
 PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
 # go
+export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
